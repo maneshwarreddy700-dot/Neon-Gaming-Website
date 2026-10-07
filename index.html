@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NEON GAMEHUB</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                NEON<span>GAMEHUB</span>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#games">Games</a>
+                <a href="#about">About</a>
+
+            </div>
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+            >
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    NEXT LEVEL GAMING
+                </p>
+
+                <h1>
+                    PLAY
+                    <span>BEYOND</span>
+                    LIMITS
+                </h1>
+
+                <p class="hero-text">
+                    Enter a futuristic gaming universe filled
+                    with action, adventure and endless challenges.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#games"
+                        class="neon-btn"
+                    >
+                        EXPLORE GAMES
+                    </a>
+
+                    <a
+                        href="#about"
+                        class="outline-btn"
+                    >
+                        DISCOVER MORE
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="energy-ring ring-one"></div>
+                <div class="energy-ring ring-two"></div>
+
+                <div class="gaming-core">
+
+                    <div class="controller">
+                        🎮
+                    </div>
+
+                    <div class="core-text">
+                        GAME<br>
+                        ON
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GAMES ================= -->
+
+        <section id="games" class="games-section">
+
+            <div class="section-heading">
+
+                <p>CHOOSE YOUR EXPERIENCE</p>
+
+                <h2>
+                    FEATURED <span>GAMES</span>
+                </h2>
+
+            </div>
+
+
+            <!-- Search -->
+
+            <div class="game-controls">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search games..."
+                >
+
+                <div class="filters">
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="all"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="action"
+                    >
+                        Action
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="racing"
+                    >
+                        Racing
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="adventure"
+                    >
+                        Adventure
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Game Cards -->
+
+            <div class="games-grid" id="gamesGrid">
+
+
+                <!-- GAME 1 -->
+
+                <article
+                    class="game-card"
+                    data-category="action"
+                    data-name="Cyber Strike"
+                >
+
+                    <div class="game-image cyber-strike">
+
+                        <span class="game-number">
+                            01
+                        </span>
+
+                        <div class="game-icon">
+                            ⚡
+                        </div>
+
+                        <span class="game-category">
+                            ACTION
+                        </span>
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <h3>
+                            CYBER STRIKE
+                        </h3>
+
+                        <p>
+                            Fight through a futuristic
+                            neon city and defeat enemy forces.
+                        </p>
+
+                        <button
+                            class="play-btn"
+                            onclick="showGame('Cyber Strike')"
+                        >
+                            PLAY NOW
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- GAME 2 -->
+
+                <article
+                    class="game-card"
+                    data-category="racing"
+                    data-name="Neon Racer"
+                >
+
+                    <div class="game-image neon-racer">
+
+                        <span class="game-number">
+                            02
+                        </span>
+
+                        <div class="game-icon">
+                            🏎️
+                        </div>
+
+                        <span class="game-category">
+                            RACING
+                        </span>
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <h3>
+                            NEON RACER
+                        </h3>
+
+                        <p>
+                            Burn through futuristic highways
+                            at impossible speeds.
+                        </p>
+
+                        <button
+                            class="play-btn"
+                            onclick="showGame('Neon Racer')"
+                        >
+                            PLAY NOW
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- GAME 3 -->
+
+                <article
+                    class="game-card"
+                    data-category="adventure"
+                    data-name="Neon Run"
+                >
+
+                    <div class="game-image neon-run">
+
+                        <span class="game-number">
+                            03
+                        </span>
+
+                        <div class="game-icon">
+                            🦖
+                        </div>
+
+                        <span class="game-category">
+                            ADVENTURE
+                        </span>
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <h3>
+                            NEON RUN
+                        </h3>
+
+                        <p>
+                            Run, jump and collect coins
+                            through a dangerous neon world.
+                        </p>
+
+                        <button
+                            class="play-btn"
+                            onclick="showGame('Neon Run')"
+                        >
+                            PLAY NOW
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- GAME 4 -->
+
+                <article
+                    class="game-card"
+                    data-category="action"
+                    data-name="Shadow Protocol"
+                >
+
+                    <div class="game-image shadow-protocol">
+
+                        <span class="game-number">
+                            04
+                        </span>
+
+                        <div class="game-icon">
+                            👾
+                        </div>
+
+                        <span class="game-category">
+                            ACTION
+                        </span>
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <h3>
+                            SHADOW PROTOCOL
+                        </h3>
+
+                        <p>
+                            Enter a secret digital world
+                            and survive the protocol.
+                        </p>
+
+                        <button
+                            class="play-btn"
+                            onclick="showGame('Shadow Protocol')"
+                        >
+                            PLAY NOW
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about-section">
+
+            <div class="section-heading">
+
+                <p>WELCOME TO THE FUTURE</p>
+
+                <h2>
+                    ABOUT <span>GAMEHUB</span>
+                </h2>
+
+            </div>
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    🎮
+                </div>
+
+                <div>
+
+                    <h3>
+                        GAMING WITHOUT LIMITS
+                    </h3>
+
+                    <p>
+                        Neon GameHub is a futuristic gaming
+                        platform concept built with HTML,
+                        CSS and JavaScript.
+                    </p>
+
+                    <p>
+                        Explore games, discover new worlds
+                        and experience a completely neon
+                        gaming interface.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= GAME MODAL ================= -->
+
+    <div
+        class="game-modal"
+        id="gameModal"
+    >
+
+        <div class="modal-box">
+
+            <button
+                class="close-modal"
+                onclick="closeGame()"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                🎮
+            </div>
+
+            <h2 id="modalTitle">
+                GAME
+            </h2>
+
+            <p>
+                This game is coming soon.
+                Stay tuned for the next level.
+            </p>
+
+            <button
+                class="neon-btn"
+                onclick="closeGame()"
+            >
+                BACK TO GAMEHUB
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Neon GameHub | Built with code & creativity
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
